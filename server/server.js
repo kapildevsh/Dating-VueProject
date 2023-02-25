@@ -26,7 +26,7 @@ const app = express();
 const morgan = require('morgan');
 const multer = require('multer')({ dest: './api/uploads' });
 
-const Jabber = require('jabber');
+const Jabber = require('jabber').default;
 const jabber = new Jabber();
 
 const lodash = require('lodash');
